@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    {# with User.objects.get(id=2) as user #}
+    {% if user.is_authenticated %}
+        <p>You are logged in as <strong>{{ user.username }}</strong> with <strong>{{ user.email }}</strong>!</p>
+    {% else %}
+        <p>You should log in first</p>
+    {% endif %}
+
+</body>
+</html>
